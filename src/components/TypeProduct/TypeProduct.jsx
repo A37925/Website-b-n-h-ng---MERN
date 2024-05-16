@@ -1,7 +1,7 @@
 import React from 'react'
 const TypeProduct = ({ name }) => {
   return (
-    <div>{name}</div>
+    <div style={{fontSize: '13px', padding: '8px'}}>{name}</div>
   )
 }
 

@@ -10,14 +10,14 @@ import {
 
 const HeaderComponent = () => {
   return (
-    <div>
+    <div style={{width: '100%'}}>
       <WrapperHeader gutter={16}>
-        <Col span={6}>
+        <Col span={5}>
           <WrapperTextHeader>
             Web ban hang
           </WrapperTextHeader>
         </Col>
-        <Col span={12}>
+        <Col span={13}>
         <ButtonInputSearch
           size='large'
           textButton='Tìm kiếm'
@@ -25,7 +25,7 @@ const HeaderComponent = () => {
           placeholder="Input search text"
           />
         </Col>
-        <Col span={6} style={{ display: 'flex', gap: '20px', alignItems: 'center'}}>
+        <Col span={6} style={{ display: 'flex', gap: '54px', alignItems: 'center'}}>
           <WrapperHeaderAccount>
             <div>
               <UserOutlined style={{ fontSize: '30px'}}/>
