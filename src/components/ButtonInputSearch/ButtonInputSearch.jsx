@@ -5,7 +5,7 @@ import {
   SearchOutlined
 } from '@ant-design/icons'
 const ButtonInputSearch = (props) => {
-  const { size, placeholder, textButton, bordered,
+  const { size, placeholder, textButton, variant,
     backgroundColorInput = '#fff',backgroundColorButton='rgb(13, 92, 182)',
     colorButton ='#fff' } = props
   return (
@@ -13,12 +13,12 @@ const ButtonInputSearch = (props) => {
       <InputComponent 
         size={size} 
         placeholder={placeholder} 
-        bordered={bordered} 
+        variant={variant} 
         style={{ backgroundColor: backgroundColorInput, borderRadius: '1px'}}
       />
       <ButtonComponent
         size={size} 
-        styleButton={{ background: backgroundColorButton, border: !bordered && 'none', borderRadius: '2px' }} 
+        styleButton={{ background: backgroundColorButton, border: !variant && 'none', borderRadius: '2px' }} 
         icon={<SearchOutlined style={{ color: '#fff'}} />}
         textButton={textButton}
         styleTextButton = {{ color: colorButton }}
